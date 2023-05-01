@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../javascript/controller.js" defer></script>
+    <title>Presentador</title>
+</head>
+<body>
+    <h1>Inicio</h1>
+    <div class="container">
+        
+        <section id="Preguntas">
+            <form id="form">
+                <h2>Ingresa tu nombre</h2>
+                <input type="text" id="name">
+                <h2>Ingresa tus apellidos</h2>
+                <input type="text" id="lastname">
+                <button id="boton">Presentar</button>
+            </form>
+            
+        </section>
+        <section id="resultado">
+            <h2>Texto final</h2>
+            <p id="texto"></p>
+        </section>
+    </div>
+</body>
+</html>
+<style>
+    body{
+        background-color: rgb(41, 33, 61);
+        font-family: Arial, Helvetica, sans-serif;
+        color:white;
+        text-align: center;
+        align-items: center;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1{
+        color: rgb(134, 244, 244);
+    }
+    #form{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    #Preguntas{
+        background-color: rgb(41, 39, 48);
+        width: 400px;
+        padding-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    #name,#lastname{
+        width: 200px;
+        height: 50px;
+        margin-bottom:1rem ;
+    }
+    #resultado{
+        background-color: rgb(58, 45, 105);
+        width: 400px;
+        height: 400px;
+    }
+</style>
