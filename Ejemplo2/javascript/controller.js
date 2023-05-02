@@ -8,7 +8,7 @@ const name2=document.querySelector("#name");
 form.addEventListener('submit',start)
 name2.setAttribute("onchange",'console.log(name2.value)');
 function start(event){
-    event.preventDefault();
+    event.preventDefault();//*Con esta funcion el navegador no se reinicia
     let final= "Hola mi nombre es "+name.value+" "+lastname.value+". Soy estudiante de la UNACH";
     texto.innerHTML=final;
 }
